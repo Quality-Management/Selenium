@@ -1,13 +1,15 @@
-# Conteúdo envolvido do estudo da ferramenta Selenium para desenvolvimento de testes
+# Conteúdo envolvido no estudo da ferramenta Selenium para desenvolvimento de testes
 
 ## Preparando o ambiente
 
 `$ git init`
+
 `$ npm init -y`
 
 ### Instalando lint
 
 `$ npm install eslint --save-dev` *Instalar apenas em ambiente de desenvolvimento (Não irá para produção).*
+
 `$ .\node_modules\.bin\eslint --init` *Iniciar o eslint.*
 
 ### Usando lint
@@ -20,7 +22,7 @@
 
 Onde a Qualidade irá atacar e onde deverá apenas observar.
 
-![TestsPyramid](img/TestsPyramid.jpg)
+![TestsPyramid](img/testspyramid.jpg)
 
 #### Proporção dos testes de uma aplicação
 
