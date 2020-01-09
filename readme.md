@@ -1,5 +1,51 @@
 # Conteúdo envolvido no estudo da ferramenta Selenium para desenvolvimento de testes
 
+> Razão de ser.
+
+Segundo Myers "o custo para correção de bugs se eleva 10 vezes a cada estágio avançado pelo desenvolvimento do software", ele chamou isso de *Regra de 10*. Deve-se ainda levar em consideração impacto à credibilidade da empresa como um todo.
+
+![Regra10](img/regra10.png)
+
+Os testes funcionais devem ser executados o mais cedo possível, que seria paralelo a fase de construção.
+Visando otimizar resultados, esses testes deveriam ser executados sempre que houvesse qualquer alteração (Bateria de regressão). Mas isso nos leva ao principal problema na estruturação de testes manuais. Imagine pedir para alguém realizar uma bateria de 100 roteiros de testes todos os dias e reportar sempre que detectar algum erro! Mesmo com uma documentação impecável, essa pessoa não trabalharia muito feliz.
+
+Como o foco dessa remodulação é construir meios de automação para nossas aplicações web, usaremos o Selenium para automatizar a interação do usuário com um browser.
+
+> **Missão**
+
+*Elevar projetos ao seu máximo potencial.*
+**ou**
+*Entregar projetos surpreendentes com o máximo de satisfação do cliente.*
+
+**Como?**
+
+- *Realização de testes a cada milistone concluída, seja projeto ou produto.*
+- *Métricas para resultados dos testes.*
+- *Acionamento periódico, a ser agendado regularmente pelos líderes de cada projeto, para início dos processos de avaliação.*
+
+## Escolha da ferramenta de automação
+
+*[Selenium](https://selenium.dev/documentation/en) automates browsers, That's it!*
+Essa é a exata definição da ferramenta em seu site oficial. Não se limitando a um framework de testes, ele é uma ferramenta que automatiza ações em browsers, coletar dados e gerar massa de dados.
+
+### Selenium IDE
+
+![seide](img/SEide.png)
+
+Ferramenta do tipo *record and play*, disponível como plugin para o navegador Firefox exclusivamente.
+
+### Selenium Web driver
+
+![seweb](img/SEweb.png)
+
+API de métodos para a v3 do Selenium, disponível em diversas linguagens e suporta diversos browsers.
+
+### Selenium Grid
+
+![segrid](img/SEgrid.png)
+
+Servidor de gerenciamento para máquinas que irão rodar os testes, inclusive realizando balanceamento de carga entre os nós conectados.
+
 ## Preparando o ambiente
 
 `$ git init`
@@ -7,6 +53,8 @@
 `$ npm init -y`
 
 ### Instalando lint
+
+> Denomina-se lint o padrão de organização do código do projeto, desde boas práticas de identação, escolhas de classes e métodos até reutilização.
 
 `$ npm install eslint --save-dev` *Instalar apenas em ambiente de desenvolvimento (Não irá para produção).*
 
@@ -26,9 +74,9 @@ Onde a Qualidade irá atacar e onde deverá apenas observar.
 
 #### Proporção dos testes de uma aplicação
 
-Enquanto os testes funcionais são os mais completos e mais próximos da forma como o usuário irá utilizar a aplicação também ocupam a menor proporção da piramid. Isso se deve aos custos envolvidos nessa camada de testes.
+Enquanto os testes funcionais são os mais completos e mais próximos da forma como o usuário irá utilizar a aplicação também ocupam a menor proporção da pirâmide. Isso se deve aos custos envolvidos nessa camada de testes.
 
-No intervalo de alguns segundos que uma suite de 10k testes uniários é executada apenas um único teste funcional seria completado.
+No intervalo de alguns segundos que uma suite de 10k testes uniários é executada apenas um único teste funcional seria completado. Há também a necessidade de estruturação de toda a infra que componha o projeto (DB, Serviços, Frontend).
 
 Os custos de manutenção de testes funcionais também são elevados pois geralmente é a interface mudanças que sofre com a maioria das alterações. Bem como identificação dos problemas, enquanto o teste unitário foca exclusivamente na lógica, toda essa complexidade do ambiente do teste funcional torna o teste muito instável (problema com massa de dados, browser, rede, serviço fora do ar) e difícil de isolar um problema.
 
@@ -86,3 +134,21 @@ Verificações dos componentes externos e testes sob a visão do usuário.
 > Apesar da funcionalidade ser a mesma, a abordagem do teste muda completamente. Ao invés de observar o código da aplicação ou acessar algum serviço, a aplicação é avaliada do ponto de vista comportamental. Aqui o ambiente também não é o de produção.
 
 ![ExemploFuncional](img/exemploFuncional001.png)
+
+### Roteiro de testes
+
+Como o foco da área para Qualidade vem da perspectiva do usuário final, a diagramação dos roteiros de teste deve seguir a modelagem USM.
+
+![usmqualidade](img/USM-qualidade.jpg)
+
+Visando não enviesar o teste para obter sempre sucesso, o escopo do que deve ser testado deve ser reportado através de um [Readme](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/readme). O resultado da avaliação desse será compartilhado através de um [Milestone review](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/report), que deverá ser usado pelo líder do projeto para guiar seus desenvolvedores no processo de correção. A devolução das ações tomadas acerca de cada *Milestone review* derá ser compartilhada num [Changelog](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/changelog), assim estabelecendo um ciclo de revisão até que todos os pontos resaltados sejam concluídos.
+
+![roteiro](img/DiagramaRoteiro.png)
+
+> [Processo anterior](https://wiki.ilhasoft.mobi/index.php/Qualidade/Processos).
+
+### Agendamento de revisões
+
+> a ser discutido!
+
+...
