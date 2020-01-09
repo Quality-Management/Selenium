@@ -7,6 +7,7 @@ Segundo Myers "o custo para correção de bugs se eleva 10 vezes a cada estágio
 ![Regra10](img/regra10.png)
 
 Os testes funcionais devem ser executados o mais cedo possível, que seria paralelo a fase de construção.
+
 Visando otimizar resultados, esses testes deveriam ser executados sempre que houvesse qualquer alteração (Bateria de regressão). Mas isso nos leva ao principal problema na estruturação de testes manuais. Imagine pedir para alguém realizar uma bateria de 100 roteiros de testes todos os dias e reportar sempre que detectar algum erro! Mesmo com uma documentação impecável, essa pessoa não trabalharia muito feliz.
 
 Como o foco dessa remodulação é construir meios de automação para nossas aplicações web, usaremos o Selenium para automatizar a interação do usuário com um browser.
@@ -14,7 +15,9 @@ Como o foco dessa remodulação é construir meios de automação para nossas ap
 > **Missão**
 
 *Elevar projetos ao seu máximo potencial.*
+
 **ou**
+
 *Entregar projetos surpreendentes com o máximo de satisfação do cliente.*
 
 **Como?**
@@ -76,16 +79,17 @@ Onde a Qualidade irá atacar e onde deverá apenas observar.
 
 Enquanto os testes funcionais são os mais completos e mais próximos da forma como o usuário irá utilizar a aplicação também ocupam a menor proporção da pirâmide. Isso se deve aos custos envolvidos nessa camada de testes.
 
-No intervalo de alguns segundos que uma suite de 10k testes uniários é executada apenas um único teste funcional seria completado. Há também a necessidade de estruturação de toda a infra que componha o projeto (DB, Serviços, Frontend).
+No intervalo de alguns segundos que uma suite de 10k testes unitários é executada apenas um único teste funcional seria completado. Há também a necessidade de estruturação de toda a infra que componha o projeto (DB, Serviços, Frontend).
 
-Os custos de manutenção de testes funcionais também são elevados pois geralmente é a interface mudanças que sofre com a maioria das alterações. Bem como identificação dos problemas, enquanto o teste unitário foca exclusivamente na lógica, toda essa complexidade do ambiente do teste funcional torna o teste muito instável (problema com massa de dados, browser, rede, serviço fora do ar) e difícil de isolar um problema.
+Os custos de manutenção de testes funcionais também são elevados pois geralmente é a interface que sofre com a maioria das alterações. Bem como identificação dos problemas, enquanto o teste unitário foca exclusivamente na lógica, toda essa complexidade do ambiente do teste funcional torna o teste muito instável (problema com massa de dados, browser, rede, serviço fora do ar) e difícil de isolar um problema.
 
 A cobertura dos vários cenários possíveis para uma funcionalidade também é um fator que eleva o peso dos testes funcionais, onde cobrir todas as possibilidades é uma tarefa quase impossível.
 
 #### Testes unitários
 
 Onde os testes de código se dividem em porções mínimas, geralmente em granularidade de métodos.
-Difícilmente os códigos estarão completamente isolados, então são utilizados mooks para isolar o código que precisa ser testado de suas dependências (acesso ao BD, etc).
+
+Difícilmente os códigos estarão completamente isolados, então são utilizados mocks para isolar o código que precisa ser testado de suas dependências (acesso ao BD, etc).
 
 ##### Exemplo de código
 
@@ -117,7 +121,7 @@ public void testeVerificarCredencial() {
 
 #### Testes de integração
 
-Integra os módulos de cada código com a intenção de testes mais amplos, normalmente desde o serviço (webservice, etc).
+Integra o código de cada módulo visando uma maior amplitude nos testes, normalmente desde o serviço (webservice, etc).
 
 ##### Exemplo de serviço
 
