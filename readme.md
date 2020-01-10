@@ -16,7 +16,7 @@ Como o foco dessa remodulação é construir meios de automação para nossas ap
 
 *Elevar projetos ao seu máximo potencial.*
 
-**ou**
+**vs.**
 
 *Entregar projetos surpreendentes com o máximo de satisfação do cliente.*
 
@@ -29,7 +29,7 @@ Como o foco dessa remodulação é construir meios de automação para nossas ap
 ## Escolha da ferramenta de automação
 
 *[Selenium](https://selenium.dev/documentation/en) automates browsers, That's it!*
-Essa é a exata definição da ferramenta em seu site oficial. Não se limitando a um framework de testes, ele é uma ferramenta que automatiza ações em browsers, coletar dados e gerar massa de dados.
+Essa é a exata definição da ferramenta em seu site oficial. Não se limitando a um framework de testes, ele é uma ferramenta que automatiza ações em browsers, gera massa de dados e coleta informações.
 
 ### Selenium IDE
 
@@ -151,8 +151,68 @@ Visando não enviesar o teste para obter sempre sucesso, o escopo do que deve se
 
 > [Processo anterior](https://wiki.ilhasoft.mobi/index.php/Qualidade/Processos).
 
-### Agendamento de revisões
+### Ecosistema
 
-> a ser discutido!
+Composição do ambiente em cinco etapas.
 
-...
+#### Planejamento
+
+Sob a ótica dos requisitos, devem ser elaborados:
+
+- Abordagem: **Como** os testes serão executados;
+- Cronograma: **Quando** os testes serão executados;
+
+Esse planejamento deriva do [PM Canvas](https://online.visual-paradigm.com/drive/#diagramlist:proj=0&open) construído na etapa de levantamento de requisitos/fechamento do projeto. (Template disponível [aqui](https://s3.eu-west-1.amazonaws.com/ilhasoft-qualidade/PMCanvas.vpd).)
+
+> Link útil: <https://wiki.ilhasoft.mobi/index.php/Qualidade/PMcanvas>
+
+#### Especificação
+
+Nes eguintes atividades: Elaborar/Revisar casos de testes e Elaborar/Revisar roteiros de testes.
+
+> Caso de teste: consiste de uma referência a um identificador ou requisito de uma especificação;
+> Roteiro de teste: registro de passos a serem seguidos, entrada de dados e correspondente saída, resultado obtido vs. esperado;
+> **Obs.** o Roteiro de teste (ou parte dele) pode ser registrado num procedimento separado, para que possa ser compartilhada por mais de um caso de teste.
+
+#### Preparação
+
+A preparação do ambiente de testes consiste em provisionar todos os recursos necessários para que tudo possa ser executado em conformidade com o planejamento:
+
+- Documentação;
+- Cronograma;
+- Ferramentas de automação;
+- Infraestrutura;
+- Pessoal;
+- Massa de dados;
+
+> Definições a serem estabelecidas:
+>
+> Critérios de entrada - indicam os itens a serem atendidos antes que o teste possa começar.
+>
+> - Ambiente de staging disponível;
+> - Prazo;
+> - Readme ou Changelog;
+>
+> Critérios de Saída - definem os itens que devem ser concluídos antes que possamos concluir o teste.
+>
+> - 50 testes completados para cada módulo;
+> - Milestone review;
+> - Liberação da infra provisionada;
+
+#### Execução
+
+Os testes são executados e os resultados obtidos são registrados.
+
+A pilar fundamental dessa etapa são os artefatos produzidos no registro de cada script executado, agregando valor ao projeto e eliminando obstáculos no caminho até a entrega desejada.
+
+> Um *script de teste* é a combinação entre um **caso**, um **roteiro** e os **dados** do teste.
+>
+> O script passa a ser uma *coleção* quando o teste envolver configuração, assim abordando também instruções detalhadas.
+
+#### Entrega
+
+Esta é a última fase do ciclo de vida de testes, onde o projeto é entregue e toda documentação é finalizada e arquivada.
+
+## Na rota do teste
+
+![roteiro](img/Qualidade.png)
