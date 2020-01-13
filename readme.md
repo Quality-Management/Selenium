@@ -199,7 +199,7 @@ Os testes são executados e os resultados obtidos são registrados.
 
 A pilar fundamental dessa etapa são os artefatos produzidos no registro de cada script executado, agregando valor ao projeto e eliminando obstáculos no caminho até a entrega desejada.
 
-> Um *script de teste* é a combinação entre um **caso**, um **roteiro** e os **dados** do teste.  >
+> Um *script de teste* é a combinação entre um **caso**, um **roteiro** e os **dados** do teste.  
 > O script passa a ser uma *coleção* quando o teste envolver configuração, assim abordando também instruções detalhadas.
 
 #### Entrega
