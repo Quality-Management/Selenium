@@ -209,3 +209,5 @@ Esta é a última fase do ciclo de vida de testes, onde o projeto é entregue e 
 ## Na rota do teste
 
 ![roteiro](img/Qualidade.png)
+
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
