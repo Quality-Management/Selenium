@@ -139,7 +139,7 @@ Como o foco da área para Qualidade vem da perspectiva do usuário final, a diag
 
 ![usmqualidade](img/USM-qualidade.jpg)
 
-Visando não enviesar o teste para obter sempre sucesso, o escopo do que deve ser testado deve ser reportado através de um [Readme](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/readme). O resultado da avaliação desse será compartilhado através de um [Milestone review](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/report), que deverá ser usado pelo líder do projeto para guiar seus desenvolvedores no processo de correção. A devolução das ações tomadas acerca de cada *Milestone review* derá ser compartilhada num [Changelog](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/changelog), assim estabelecendo um ciclo de revisão até que todos os pontos resaltados sejam concluídos.
+Visando não enviesar o teste para obter sempre sucesso, o escopo do que deve ser testado deve ser reportado através de um [Readme](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/readme). O resultado da avaliação desse será compartilhado através de um [Milestone review](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/report), que deverá ser usado pelo líder do projeto para guiar seus desenvolvedores no processo de correção. A devolução das ações tomadas acerca de cada *Milestone review* derá ser compartilhada num [Changelog](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/changelog), assim estabelecendo um ciclo de revisão até que todos os pontos resaltados sejam concluídos. Uma vez concluído o projeto será entregue um [Report conclusivo](https://wiki.ilhasoft.mobi/index.php/Qualidade/Requisitos/report-conclusivo) demonstrando métricas do processo.
 
 ![roteiro](img/DiagramaRoteiro.png)
 
