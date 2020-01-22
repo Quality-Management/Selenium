@@ -1,0 +1,26 @@
+{
+  "name": "Selenium",
+  "version": "1.0.0",
+  "description": "> Razão de ser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quality-Management/Selenium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quality-Management/Selenium/issues"
+  },
+  "homepage": "https://github.com/Quality-Management/Selenium#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  }
+}
